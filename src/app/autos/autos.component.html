@@ -1,0 +1,24 @@
+
+
+<!--Evento click,el metodo cambia la letra-->
+<button (click)="cambiarLetra()">CambiarLetra!</button>
+
+<!--Componenete letra-->
+<br><br>{{letra}}  
+
+<!--Cambuamos el color!-->
+
+<h1 [ngStyle]="{
+                'padding':'20px',
+                'background':'#ccc'}"
+                >Marcas de autos:
+</h1>
+
+<!--Ciclo for recorre el array y muestra los valores que posee-->
+<ul>
+    <li *ngFor="let mar of marcas">
+            {{mar}}
+    </li>
+</ul>
+
+

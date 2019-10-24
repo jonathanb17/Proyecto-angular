@@ -1,0 +1,12 @@
+
+<button (click)="darClik()">te saludo!</button>
+
+
+<h1 [ngStyle]="{'background-color':'red',
+                 'color':'white'
+                }">Listado de zapatillas</h1>
+<ul>
+    <li *ngFor="let zapa of zapas">
+        {{zapa}}
+    </li>
+</ul>
